@@ -37,17 +37,18 @@ body *{
 }
 
 #container{
-  width: 360px;
-  height: 712px;
+  width: 100%;
+  max-width: 588px;
   margin: 56px auto 0px;
-  
+  padding: 0 24px;
 }
 #profile img{
   width: 112px;
+  
 }
 #profile{ 
-  width: 360px;
-  height: 192px;
+  /* width: 360px;
+  height: 192px; */
   text-align: center;
   padding: 24px;
 
@@ -96,9 +97,9 @@ body *{
 }
 
 #social_links{
-  /* border: 1px solid red; */
-  width: 360px;
-  height: 80px;
+  /* border: 1px solid red;  */
+  /* width: 360px;
+  height: 80px; */
   display: flex;
   gap: 16px;
   padding: 24px 0;
