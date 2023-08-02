@@ -127,6 +127,7 @@ ul{
   padding: 24px 0;
 }
 
+/* lista */
 ul li a{
   border: 1px solid red;
   display: flex;

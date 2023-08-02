@@ -1,7 +1,7 @@
 function toggleMode() {
   const html = document.documentElement
   html.classList.toggle("light")
-// essa funcao basicamente faz tudo que foi explicado na anterior diminuindo a quantidade de codigo escrito, entao aqui temos duas formas de fazer a interacao do switch da pagina
+// essa funcao basicamente faz tudo que foi explicado na anterior diminuindo a quantidade de codigo escrito, entao aqui temos duas formas de fazer a interacao do switch da pagina.
 
   // se na lista de classe conter o 'light' o if entra no codigo, basicamente o if e uma condicional que se for verdadeira sera executada
   // if(html.classList.contains('light')) {
