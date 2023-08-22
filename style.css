@@ -88,7 +88,13 @@ body *{
 
 #switch button:hover {
   outline: 8px solid var(--highlight-color)
+  
 }
+
+.light #switch button:hover {
+  outline: 8px solid rgba(0, 0, 0, 0.30);
+}
+
 
 
 #switch span{
@@ -101,6 +107,7 @@ body *{
   border-radius: 9999px;
 }
 
+
 #social_links{
   /* border: 1px solid red;  */
   /* width: 360px;
@@ -111,6 +118,8 @@ body *{
   font-size: 24px;
   justify-content: center;
 }
+
+
 #footer{
   /* border: 1px solid red;  */
   color: white;
@@ -150,6 +159,11 @@ ul li a{
   transition: background 0.5s ;
 }
 
+.light ul li a{
+  background: rgba(0, 0, 0, 0.30);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 /*pseudo-seletor*/
 ul li a:hover{
   background: var(--surface-color-hover);
@@ -167,6 +181,13 @@ ul li a:hover{
   border-radius: 50%;
   transition: background 0.2s;
 }
+.light #social_links a:hover{
+  background: rgba(0, 0, 0, 0.30);
+  border-radius: 50%;
+  transition: background 0.2s;
+  
+}
+
 #footer ion-icon{
   color: var(--text-color);
 }
