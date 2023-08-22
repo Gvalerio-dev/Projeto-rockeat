@@ -78,13 +78,18 @@ body *{
   z-index: 1;
   transform: translateY(-50%);
   left: 0;
+  animation: slide-back 0.2s;
   
 }
 
-.light #switch button{
-  right: 0;
-  left: initial;
+.light #switch button {
+  animation: slide-in 0.4s forwards;
 }
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color)
+}
+
 
 #switch span{
   display: block;
@@ -154,7 +159,7 @@ ul li a:hover{
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px 8px;
+  padding: 10px 8px;
 }
 
 #social_links a:hover{
@@ -164,4 +169,24 @@ ul li a:hover{
 }
 #footer ion-icon{
   color: var(--text-color);
+}
+
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 0;
+  }
 }
